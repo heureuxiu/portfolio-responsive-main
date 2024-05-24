@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Young Serif", serif;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+
+/* Style the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: white;
+  padding: 10px 30px;
+}
+
+/* Style the company name */
+.company-name {
+  color: rgb(127, 140, 250);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* Style the hamburger menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(96, 122, 255);
+  margin: 3px 0;
+}
+
+/* Style the navigation menu */
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(96, 122, 255);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ff5733;
+}
+
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  /* Style the intro container */
+  .intro-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+
+  /* Style the intro section */
+  .intro {
+    text-align: justify;
+    padding: 20px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(127, 140, 250);
+  }
+
+  .intro p {
+    font-size: 16px;
+    color: rgb(23, 43, 77);
+  }
+
+  .intro h4 {
+    display: flex;
+    padding-top: 20px;
+    color: rgb(127, 140, 250);
+  }
+
+  .font-awesome {
+    display: flex;
+    margin-right: 250px;
+    margin-top: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    color: rgb(23, 43, 77);
+  }
+
+  /* Style the card container */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* Style the card */
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 35px;
+  }
+
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  .card p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(96, 122, 255);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: lightblue;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+
+  /* Style the intro section */
+  .about {
+    text-align: justify;
+    padding: 20px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+  }
+
+  .about h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(127, 140, 250);
+  }
+
+  .about p {
+    font-size: 16px;
+    color: rgb(23, 43, 77);
+  }
+
+  .about h4 {
+    display: flex;
+    padding-top: 20px;
+    color: rgb(127, 140, 250);
+  }
+
+  .resume-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: rgb(127, 140, 250);
+    background-color: white;
+    border-color: rgb(30, 48, 80);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .languages-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 5px;
+    position: relative; 
+  }
+
+  .languages-container h2 {
+    color: rgb(127, 140, 250);
+  }
+
+  .languages-container i {
+    color: rgb(23, 43, 77);
+  }
+
+  .card-languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1 {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 35px;
+  }
+
+  .card-languages h3 {
+    margin-left: 20px;
+    color: rgb(30, 48, 80);
+  }
+
+  .card-languages i {
+    font-size: 30px;
+    color: rgb(127, 140, 250);
+  }
+
+  hr {
+    margin: 5px 40px;
+  }
+
+  .framework {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 20px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    border-radius: 5px;
+    position: relative; 
+  }
+
+  .framework h2 {
+    color: rgb(127, 140, 250);
+  }
+
+  .framework i {
+    color: rgb(23, 43, 77);
+  }
+
+  /* Style the contact form container */
+  .contact-form-container {
+    background-color: #6070FF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .contact-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .contact-form-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Style the form elements */
+  .input-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .input-group textarea {
+    resize: vertical;
+  }
+
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: white;
+    color: rgb(127, 140, 250);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button[type="submit"]:hover {
+    background-color: rgb(216, 219, 248);
+  }
+}
